@@ -1,0 +1,81 @@
+@import "font.css";
+
+.logo > img {
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  margin-top: -100px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(../images/bg320.png);
+  background-size: cover;
+}
+
+.text {
+  color: white;
+
+  font-family: 'Impact Regular';
+}
+
+.t1 > img, .t3 > img {
+  width: 900px;
+}
+
+.t1 {
+  margin-top: -100px;
+  margin-left: 20px;
+}
+
+.t2, .t4 {
+  margin-top: 50px;
+  margin-left: 25px;
+
+  font-size: 100px;
+}
+
+.t3 {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.slogan {
+  display: grid;
+
+  margin-top: 200px;
+  margin-bottom: 300px;
+
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 350px;
+  grid-template-rows: 350px 350px 350px;
+  grid-gap: 50px;
+}
+
+.s1, .s2, .s3 {
+	width: 350px;
+	height: 350px;
+
+  color: white;
+	background: #21316A;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 57px;
+}
+
+p {
+  opacity: 0.7;
+}
+
+p:hover {
+  opacity: 1;
+}
+
+.s4 {
+  display: none;
+}
