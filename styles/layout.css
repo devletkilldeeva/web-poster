@@ -6,13 +6,7 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
   background-color: black;
-
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .logo {
@@ -21,10 +15,13 @@ body {
 }
 
 .main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
-  grid-template-columns: 320px;
-  grid-template-rows: 440px 60px;
+  margin-left: 100px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8 {
@@ -53,7 +50,7 @@ body {
 }
 
 #c3 {
-  margin-top: 300px;
+  margin-top: 230px;
   margin-left: 60px;
 }
 
@@ -68,17 +65,17 @@ body {
 }
 
 #c6 {
-  margin-top: 480px;
+  margin-top: 400px;
   margin-left: 40px;
 }
 
 #c7 {
-  margin-top: 550px;
+  margin-top: 380px;
   margin-left: 280px;
 }
 
 #c8 {
-  margin-top: 450px;
+  margin-top: 320px;
   margin-left: 170px;
 }
 
@@ -93,18 +90,26 @@ body {
 
 .adress {
   width: 320px;
+  margin-left: -20px;
+
+  text-align: center;
 
   color: white;
 
   font-family: 'Avenir Next Cyr Regular';
   font-size: 13px;
+  line-height: 20px;
 
   align-items: center;
   justify-content: center;
 }
 
 #a {
-text-align: center;
+  text-align: center;
+}
+
+#b, #c, #d, #e {
+  display: none;
 }
 
 .data {
@@ -120,17 +125,12 @@ text-align: center;
   font-size: 30px;
 }
 
-.o {
-  width: 320px;
-
-  justify-content: center;
-  align-items: center;
-}
-
 .o > img {
   width: 320px;
-  padding-right: auto;
-  padding-left: auto;
+}
+
+.o {
+  margin-left: -20px;
 }
 
 #date {
@@ -148,19 +148,6 @@ text-align: center;
 .logo > img {
   width: 80px;
 }
-
-/* .background {
-  width: 320px;
-
-  color: white;
-
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 200px;
-  font-weight: 900;
-
-  justify-content: center;
-  align-items: center;
-} */
 
 .about {
   display: grid;
@@ -201,23 +188,232 @@ text-align: center;
 
 @media (min-width: 768px) {
 
+  .logo > img {
+    width: 150px;
+  }
+
   .o > img {
     width: 760px;
   }
 
   .o {
-    width: 768px;
+    margin-left: 100px;
   }
 
   .adress {
     width: 768px;
+    margin-left: 100px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .data {
+    margin-top: -65px;
+  }
+
+  .data #time {
+    font-size: 70px;
+    line-height: 40px;
+  }
+
+  .data #date {
+    font-size: 70px;
+  }
+
+  .text1 p, .text2 p, .text3 p {
+    font-size: 16px;
+  }
+
+  #p1, #p2 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  #p3 {
+    margin-top: -90px;
+  }
+
+  .about {
+    display: grid;
+
+    margin-top: 100px;
+
+    grid-template-columns: 250px;
+    grid-template-rows: 80px 240px 80px 240px 80px 240px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8 {
+    width: 50px;
+    height: 50px;
+  }
+
+  #c1 {
+    margin-top: -10px;
+  }
+
+  #c2 {
+    margin-top: 10px;
+    margin-left: 600px;
+
+  }
+
+  #c3 {
+    margin-top: 400px;
+    margin-left: 60px;
+  }
+
+  #c4 {
+    margin-top: 530px;
+    margin-left: 400px;
+  }
+
+  #c5 {
+    margin-top: 200px;
+    margin-left: 300px;
+  }
+
+  #c6 {
+    margin-top: 700px;
+    margin-left: 40px;
+  }
+
+  #c7 {
+    margin-top: 900px;
+    margin-left: 350px;
+  }
+
+  #c8 {
+    margin-top: 450px;
+    margin-left: 700px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .o > img {
+    width: 650px;
+  }
+
+  .o {
+    margin-left: 250px;
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: row;
+
+    width: 1000px;
+
+    font-size: 20px;
+
+    justify-content: space-between;
+  }
+
+  #a {
+    display: none;
+  }
+
+  #b, #c, #d, #e {
+    display: flex;
   }
 
   .main {
     display: grid;
 
-    grid-template-columns: 760px;
-    grid-template-rows: 1031px 60px;
+    grid-template-columns: 1000px;
+    grid-template-rows: 882px 80px;
+  }
+
+  .data #time #date {
+    margin-top: -60px;
+
+    text-align: center;
+
+    font-size: 200px;
+  }
+
+  #time {
+    line-height: 35px;
+  }
+
+  .text1 p, .text2 p, .text3 p {
+    font-size: 16px;
+  }
+
+  #p1, #p2, #p3 {
+    font-size: 18px;
+  }
+
+  .about {
+    display: grid;
+
+    margin-top: 100px;
+
+    grid-template-columns: 400px;
+    grid-template-rows: 85px 240px 85px 240px 85px 240px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #c1 {
+    margin-top: -10px;
+    margin-left: 100px;
+  }
+
+  #c2 {
+    margin-top: 10px;
+    margin-left: 700px;
+
+  }
+
+  #c3 {
+    margin-top: 400px;
+    margin-left: 60px;
+  }
+
+  #c4 {
+    margin-top: 530px;
+    margin-left: 400px;
+  }
+
+  #c5 {
+    margin-top: 200px;
+    margin-left: 300px;
+  }
+
+  #c6 {
+    margin-top: 700px;
+    margin-left: 40px;
+  }
+
+  #c7 {
+    margin-top: 900px;
+    margin-left: 800px;
+  }
+
+  #c8 {
+    margin-top: 450px;
+    margin-left: 950px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .o > img {
+    width: 768px;
+  }
+
+  .o {
+    margin-left: 170px;
+  }
+
+  .adress {
+    font-size: 20px;
+  }
+
+  .main {
   }
 
   .data {
@@ -227,11 +423,88 @@ text-align: center;
   #time {
     line-height: 35px;
   }
+
+  #p1, #p2, #p3 {
+    font-size: 18px;
+  }
+
+  .about {
+    display: grid;
+
+    margin-top: 100px;
+
+    grid-template-columns: 600px;
+    grid-template-rows: 85px 240px 85px 240px 85px 240px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #c1 {
+    margin-top: -10px;
+    margin-left: 100px;
+  }
+
+  #c2 {
+    margin-top: 10px;
+    margin-left: 1200px;
+
+  }
+
+  #c3 {
+    margin-top: 400px;
+    margin-left: 60px;
+  }
+
+  #c4 {
+    margin-top: 530px;
+    margin-left: 700px;
+  }
+
+  #c5 {
+    margin-top: 200px;
+    margin-left: 500px;
+  }
+
+  #c6 {
+    margin-top: 700px;
+    margin-left: 300px;
+  }
+
+  #c7 {
+    margin-top: 800px;
+    margin-left: 1150px;
+  }
+
+  #c8 {
+    margin-top: 450px;
+    margin-left: 1300px;
+  }
+
+  .dot1 > img {
+    width: 110px;
+  }
+
+  .dot2 > img {
+    width: 90px;
+
+  }
+
+  .dot3 > img {
+    width: 130px;
+  }
+
 }
 
-@media (min-width: 1024px) {
-}
+/* буква О - будущая замена svg  */
+/* .background {
+  width: 320px;
 
-@media (min-width: 1440px) {
+  color: white;
 
-}
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+
+  justify-content: center;
+  align-items: center;
+} */
