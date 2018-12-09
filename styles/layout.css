@@ -5,264 +5,233 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.logo > img {
-  width: 900px;
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo {
-  width: 100%;
-  margin-top: -100px;
-
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-.bg {
-  width: 320px;
-  height: 100vw;
-}
-
-body {
-  background-image: url(../images/bgnew.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.text {
-  color: white;
-
-  font-family: 'Impact Regular';
-}
-
-.t1 > img, .t3 > img {
-  width: 850px;
-}
-
-.t1 {
-  margin-top: -100px;
-  margin-left: 20px;
-}
-
-.t2 {
-  width: 800px;
-  margin-top: 50px;
-  margin-left: 25px;
-
-  font-size: 100px;
-}
-
-.t4 {
-  width: 800px;
-  margin-top: 50px;
-  margin-left: 25px;
-
-  font-size: 92px;
-}
-
-.t3 {
-  margin-top: 50px;
-  margin-left: 20px;
-}
-
-.slogan {
+.main {
   display: grid;
 
-  margin-top: 200px;
-  margin-bottom: 300px;
-  margin-left: 450px;
+  grid-template-columns: 320px;
+  grid-template-rows: 440px 60px;
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8 {
+  position: absolute;
+
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #FF00FF;
+
+}
+
+#c1 {
+  margin-top: -10px;
+}
+
+#c2 {
+  margin-top: 10px;
+  margin-left: 260px;
+
+}
+
+#c3 {
+  margin-top: 300px;
+  margin-left: 60px;
+}
+
+#c4 {
+  margin-top: 230px;
+  margin-left: 250px;
+}
+
+#c5 {
+  margin-top: 100px;
+  margin-left: 130px;
+}
+
+#c6 {
+  margin-top: 480px;
+  margin-left: 40px;
+}
+
+#c7 {
+  margin-top: 550px;
+  margin-left: 280px;
+}
+
+#c8 {
+  margin-top: 450px;
+  margin-left: 170px;
+}
+
+.text1 p, .text2 p, .text3 p {
+  text-align: justify;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 13px;
+}
+
+.adress {
+  width: 320px;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 13px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#a {
+text-align: center;
+}
+
+.data {
+  float: right;
+
+  margin-top: -35px;
+
+  text-align: center;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 30px;
+}
+
+.o {
+  width: 320px;
 
   justify-content: center;
   align-items: center;
-  grid-template-columns: 350px;
-  grid-template-rows: 350px 350px 350px;
-  grid-gap: 50px;
 }
 
-.s1, .s2, .s3 {
-	width: 350px;
-	height: 350px;
-  padding-left: 5px;
-
-  opacity: 0.7;
-  border: 10px solid white;
-
-  font-family: 'PT Sans', sans-serif;
-  font-size: 55px;
+.o > img {
+  width: 320px;
+  padding-right: auto;
+  padding-left: auto;
 }
 
-p {
-  opacity: 0.7;
+#date {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+#time {
+  text-align: center;
+
+  line-height: 20px;
+}
+
+.logo > img {
+  width: 80px;
+}
+
+/* .background {
+  width: 320px;
+
   color: white;
+
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+
+  justify-content: center;
+  align-items: center;
+} */
+
+.about {
+  display: grid;
+
+  margin-top: 100px;
+
+  grid-template-columns: 250px;
+  grid-template-rows: 80px 200px 80px 200px 80px 200px;
+  justify-content: center;
+  align-items: center;
 }
 
-p:hover {
-  opacity: 1;
+.dot1 > img {
+  width: 80px;
 }
 
-.s4 {
-  display: none;
+.dot2 > img {
+  width: 60px;
+
+}
+
+.dot3 > img {
+  width: 100px;
+}
+
+#p1, #p2 {
+  margin-top: -50px;
+}
+
+#p3 {
+  margin-top: -90px;
+}
+
+.dot1, .dot2, .dot3 {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
-  .t1 > img, .t3 > img {
-    width: 450px;
+
+  .o > img {
+    width: 760px;
   }
 
-  .t2 {
-    width: 300px;
-
-    font-size: 60px
+  .o {
+    width: 768px;
   }
 
-  .t4 {
-    font-size: 55px;
+  .adress {
+    width: 768px;
   }
 
-  .slogan {
-    margin-left: 150px;
+  .main {
+    display: grid;
 
-    grid-template-columns: 200px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 760px;
+    grid-template-rows: 1031px 60px;
   }
 
-  .s1, .s2, .s3 {
-  	width: 200px;
-  	height: 200px;
-
-    border: 5px solid white;
-
-    font-size: 32px;
+  .data {
+    font-size: 50px;
   }
 
-  .logo {
-    margin-top: -270px;
+  #time {
+    line-height: 35px;
   }
 }
 
 @media (min-width: 1024px) {
-  .logo > img {
-    width: 700px;
-  }
-
-  .logo {
-    margin-top: -200px;
-  }
-
-  .t1 > img, .t3 > img {
-    width: 300px;
-  }
-
-  .t2 {
-    width: 300px;
-
-    font-size: 40px
-  }
-
-  .t4 {
-    font-size: 37px;
-  }
-
-  .slogan {
-    display: grid;
-
-    margin-top: -360px;
-    margin-bottom: 300px;
-    margin-left: 450px;
-
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px;
-    grid-gap: 50px;
-  }
-
-  .s4 {
-    display: inline;
-  }
-
-  .s1, .s2, .s3, .s4 {
-  	width: 150px;
-  	height: 150px;
-
-    opacity: 0.7;
-    border: 5px solid white;
-
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-  }
 }
 
 @media (min-width: 1440px) {
-  .logo > img {
-    width: 900px;
-  }
 
-  .logo {
-    margin-top: -200px;
-  }
-
-  .t1 > img, .t3 > img {
-    width: 300px;
-  }
-
-  .t2 {
-    width: 300px;
-
-    font-size: 40px
-  }
-
-  .t4 {
-    font-size: 37px;
-  }
-
-  .slogan {
-    display: grid;
-
-    margin-top: -360px;
-    margin-bottom: 300px;
-    margin-left: 450px;
-
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 150px 150px;
-    grid-gap: 50px;
-  }
-
-  .s4 {
-    display: inline;
-
-    opacity: 0.7;
-  }
-
-  .s1, .s2, .s3, .s4 {
-  	width: 150px;
-  	height: 150px;
-
-    opacity: 0.7;
-
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-  }
-
-  .s1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .s2 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
-
-  .s3 {
-    grid-column-start: 3;
-    grid-row-start: 1;
-  }
-
-  .s4 {
-    grid-column-start: 4;
-    grid-row-start: 2;
-  }
 }
