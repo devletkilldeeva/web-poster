@@ -9,115 +9,27 @@ body {
   background-color: black;
 }
 
+.logo > img {
+  width: 55px;
+}
+
 .logo {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: 100px;
-
-  justify-content: center;
-  align-items: center;
-}
-
-#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8 {
   position: absolute;
+  z-index: 1;
 
-  display: flex;
-
-  width: 30px;
-  height: 30px;
-
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: #FF00FF;
-
-}
-
-#c1 {
-  margin-top: -10px;
-}
-
-#c2 {
-  margin-top: 10px;
-  margin-left: 260px;
-
-}
-
-#c3 {
-  margin-top: 230px;
-  margin-left: 60px;
-}
-
-#c4 {
-  margin-top: 230px;
-  margin-left: 250px;
-}
-
-#c5 {
-  margin-top: 100px;
-  margin-left: 130px;
-}
-
-#c6 {
-  margin-top: 400px;
-  margin-left: 40px;
-}
-
-#c7 {
-  margin-top: 380px;
-  margin-left: 280px;
-}
-
-#c8 {
-  margin-top: 320px;
-  margin-left: 170px;
-}
-
-.text1 p, .text2 p, .text3 p {
-  text-align: justify;
-
-  color: white;
-
-  font-family: 'Avenir Next Cyr Regular';
-  font-size: 13px;
-}
-
-.adress {
-  width: 320px;
-  margin-left: -20px;
-
-  text-align: center;
-
-  color: white;
-
-  font-family: 'Avenir Next Cyr Regular';
-  font-size: 13px;
-  line-height: 20px;
-
-  align-items: center;
-  justify-content: center;
-}
-
-#a {
-  text-align: center;
-}
-
-#b, #c, #d, #e {
-  display: none;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .data {
+  z-index: 1;
+
   float: right;
 
-  margin-top: -35px;
+  margin-top: 15px;
 
   text-align: center;
+  text-transform: uppercase;
 
   color: white;
 
@@ -125,169 +37,219 @@ body {
   font-size: 30px;
 }
 
-.o > img {
-  width: 320px;
-}
-
-.o {
-  margin-left: -20px;
-}
-
 #date {
   margin-bottom: 10px;
 
   text-align: center;
+
+  font-size: 53px;
 }
 
 #time {
+  margin-bottom: 10px;
+
   text-align: center;
 
+  font-size: 29px;
   line-height: 20px;
 }
 
-.logo > img {
-  width: 80px;
+#event {
+  font-size: 22px;
 }
 
-.about {
-  display: grid;
+.main320 {
+  z-index: 10;
 
-  margin-top: 100px;
+  display: flex;
 
-  grid-template-columns: 250px;
-  grid-template-rows: 80px 200px 80px 200px 80px 200px;
+  width: 320px;
+  margin-bottom: 100px;
+
   justify-content: center;
   align-items: center;
 }
 
+.main768, .main1024, .main1440 {
+  display: none;
+}
+
+.main320 > img {
+  width: 320px;
+  margin-top: -100px;
+}
+
+.text1 p, .text2 p, .text3 p {
+  width: 230px;
+  margin-bottom: 70px;
+  margin-left: 45px;
+
+  text-align: left;
+  letter-spacing: -0.4px;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Demi';
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.text1 p {
+  background: linear-gradient(180deg, #fff 10%, #EE8AFF 66%, #EE8AFF);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.text2 p {
+  background: linear-gradient(180deg, #fff 10%, #88BDFF 66%, #88BDFF);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.text3 p {
+  background: linear-gradient(180deg, #fff 10%, #6200FF 66%, #6200FF);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.about {
+  width: 320px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 5px;
+  margin-left: 45px;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Bold';
+  font-size: 22px;
+}
+
 .dot1 > img {
-  width: 80px;
+  width: 70px;
+  margin-bottom: 30px;
+  margin-left: 126px;
 }
 
 .dot2 > img {
-  width: 60px;
+  width: 55px;
+  margin-bottom: 30px;
+  margin-left: 131px;
 
 }
 
 .dot3 > img {
   width: 100px;
+  margin-bottom: 30px;
+  margin-left: 110px;
 }
 
-#p1, #p2 {
-  margin-top: -50px;
+.adress {
+  width: 320px;
+
+  text-align: center;
+
+  color: white;
+
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 13px;
+  line-height: 20px;
+
+  align-items: center;
+  justify-content: center;
 }
 
-#p3 {
-  margin-top: -90px;
-}
+.line {
+  position: absolute;
 
-.dot1, .dot2, .dot3 {
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: -100px;
+  margin-left: 20px;
 }
 
 @media (min-width: 768px) {
 
   .logo > img {
-    width: 150px;
+    width: 65px;
   }
 
-  .o > img {
-    width: 760px;
+  .main320 {
+    display: none;
   }
 
-  .o {
-    margin-left: 100px;
-  }
+  .main768 {
+    display: flex;
 
-  .adress {
     width: 768px;
-    margin-left: 100px;
 
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .data {
-    margin-top: -65px;
-  }
-
-  .data #time {
-    font-size: 70px;
-    line-height: 40px;
-  }
-
-  .data #date {
-    font-size: 70px;
-  }
-
-  .text1 p, .text2 p, .text3 p {
-    font-size: 16px;
-  }
-
-  #p1, #p2 {
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-
-  #p3 {
-    margin-top: -90px;
-  }
-
-  .about {
-    display: grid;
-
-    margin-top: 100px;
-
-    grid-template-columns: 250px;
-    grid-template-rows: 80px 240px 80px 240px 80px 240px;
     justify-content: center;
     align-items: center;
   }
 
-  #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8 {
-    width: 50px;
-    height: 50px;
+  .dot1 > img {
+    width: 130px;
   }
 
-  #c1 {
-    margin-top: -10px;
-  }
-
-  #c2 {
-    margin-top: 10px;
-    margin-left: 600px;
+  .dot2 > img {
+    width: 80px;
 
   }
 
-  #c3 {
-    margin-top: 400px;
-    margin-left: 60px;
+  .dot3 > img {
+    width: 130px;
   }
 
-  #c4 {
-    margin-top: 530px;
-    margin-left: 400px;
+  .dot1, .dot2, .dot3 {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+    margin-left: -50px;
   }
 
-  #c5 {
-    margin-top: 200px;
-    margin-left: 300px;
+  .dot3 {
+    margin-left: -35px;
   }
 
-  #c6 {
-    margin-top: 700px;
-    margin-left: 40px;
+  .about {
+    width: 768px;
+    margin-top: 150px;
   }
 
-  #c7 {
-    margin-top: 900px;
-    margin-left: 350px;
+  h2 {
+    margin-left: 5px;
+
+    font-size: 49px;
   }
 
-  #c8 {
-    margin-top: 450px;
-    margin-left: 700px;
+  .dot1 h2 {
+      margin-top: 50px;
+  }
+
+  .dot2 h2 {
+      margin-top: 60px;
+  }
+
+  .dot3 h2 {
+      margin-top: 5px;
+  }
+
+  .text1 p, .text2 p, .text3 p {
+    width: 638px;
+    margin-left: 80px;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .adress {
+    width: 768px;
   }
 
 }
@@ -357,47 +319,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  #c1 {
-    margin-top: -10px;
-    margin-left: 100px;
-  }
-
-  #c2 {
-    margin-top: 10px;
-    margin-left: 700px;
-
-  }
-
-  #c3 {
-    margin-top: 400px;
-    margin-left: 60px;
-  }
-
-  #c4 {
-    margin-top: 530px;
-    margin-left: 400px;
-  }
-
-  #c5 {
-    margin-top: 200px;
-    margin-left: 300px;
-  }
-
-  #c6 {
-    margin-top: 700px;
-    margin-left: 40px;
-  }
-
-  #c7 {
-    margin-top: 900px;
-    margin-left: 800px;
-  }
-
-  #c8 {
-    margin-top: 450px;
-    margin-left: 950px;
-  }
 }
 
 @media (min-width: 1440px) {
@@ -439,47 +360,6 @@ body {
     align-items: center;
   }
 
-  #c1 {
-    margin-top: -10px;
-    margin-left: 100px;
-  }
-
-  #c2 {
-    margin-top: 10px;
-    margin-left: 1200px;
-
-  }
-
-  #c3 {
-    margin-top: 400px;
-    margin-left: 60px;
-  }
-
-  #c4 {
-    margin-top: 530px;
-    margin-left: 700px;
-  }
-
-  #c5 {
-    margin-top: 200px;
-    margin-left: 500px;
-  }
-
-  #c6 {
-    margin-top: 700px;
-    margin-left: 300px;
-  }
-
-  #c7 {
-    margin-top: 800px;
-    margin-left: 1150px;
-  }
-
-  #c8 {
-    margin-top: 450px;
-    margin-left: 1300px;
-  }
-
   .dot1 > img {
     width: 110px;
   }
@@ -494,17 +374,3 @@ body {
   }
 
 }
-
-/* буква О - будущая замена svg  */
-/* .background {
-  width: 320px;
-
-  color: white;
-
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 200px;
-  font-weight: 900;
-
-  justify-content: center;
-  align-items: center;
-} */
